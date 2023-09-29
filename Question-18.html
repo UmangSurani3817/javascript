@@ -1,0 +1,26 @@
+<!--  Create password field with show hide functionalities -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click to radio button for show the password.</p>
+    password: <input type="password" value="UmeE" id="psw"><br><br>
+    <input type="checkbox" onclick="shwpsw()"> Show Password
+
+    <script>
+        function shwpsw() {
+            var x = document.getElementById("psw");
+            if (x.type === "password"){
+                x.type = "text";
+            }
+            else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
